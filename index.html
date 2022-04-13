@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>From field biology to modeling, turning data into smart weed management</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Maxwel Coura Oliveira (he/him/his)" />
+    <meta name="date" content="2022-04-25" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <meta name="description" content="Oliveira&#39;s seminar at Colorado State University"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="maxwel/talks"/>
+    <meta name="twitter:title" content="From field biology to modeling, turning data into smart weed management"/>
+    <meta name="twitter:description" content="Oliveira&#39;s seminar at Colorado State University"/>
+    <meta name="twitter:url" content="https://arizona-talk.netlify.app/"/>
+    <meta name="twitter:image" content="https://arizona-talk.netlify.app/images/social-card.png"/>
+    <meta name="twitter:image:alt" content=""/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@maxwelco"/>
+    <meta name="twitter:site" content="@maxwelco"/>
+    <meta property="og:title" content="From field biology to modeling, turning data into smart weed management"/>
+    <meta property="og:description" content="Oliveira&#39;s seminar at Colorado State University"/>
+    <meta property="og:url" content="https://arizona-talk.netlify.app/"/>
+    <meta property="og:image" content="https://arizona-talk.netlify.app/images/social-card.png"/>
+    <meta property="og:image:alt" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <script src="index_files/mark.js/mark.min.js"></script>
+    <link href="index_files/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"top-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script src="index_files/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="index_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="index_files/tile-view/tile-view.js"></script>
+    <script src="index_files/clipboard/clipboard.min.js"></script>
+    <link href="index_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="index_files/shareon/shareon.min.js"></script>
+    <link href="index_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="index_files/fabric/fabric.min.js"></script>
+    <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="index_files/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <script src="index_files/js-cookie/js.cookie.js"></script>
+    <script src="index_files/peerjs/peerjs.min.js"></script>
+    <script src="index_files/tiny.toast/toast.min.js"></script>
+    <link href="index_files/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="index_files/jquery/jquery.min.js"></script>
+    <link href="index_files/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="index_files/leaflet/leaflet.js"></script>
+    <link href="index_files/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="index_files/proj4/proj4.min.js"></script>
+    <script src="index_files/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="index_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="index_files/leaflet-binding/leaflet.js"></script>
+    <script src="index_files/leaflet-providers/leaflet-providers_1.9.0.js"></script>
+    <script src="index_files/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# From field biology to modeling, turning data into smart weed management
+## Candidate for the Weed Science position at Colorado State University
+### Dr. Maxwel Coura Oliveira (he/him/his)
+### April 25, 2022
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+background-image: url(https://source.unsplash.com/hB3Dc62wc6s)
+background-position: right
+background-size: contain
+
+
+## Outline
+
+
+- About me
+
+- Research experiences
+
+- Oliveira's lab at Colorado State University
+
+
+
+
+.footnote[Image: Juan Rojas/Unsplash]
+---
+class: inverse middle center
+
+# About me
+
+
+---
+
+class: middle, center
+
+## Maxwel Coura Oliveira
+
+&lt;img style="border-radius: 50%;" src="images/foto.jpg" width="150px"/&gt;
+
+
+
+
+[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @maxwelco](https://github.com/maxwelco)  
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; @maxwelco](https://twitter.com/maxwelco)  
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; maxweeds.rbind.io](https://maxweeds.rbind.io)  
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"&gt;&lt;/path&gt;&lt;/svg&gt; maxwelco@gmail.com](mailto:maxwelco@gmail.com)
+
+???
+
+- I am on the social media. Please fee free to follow me
+
+- Describe my social media
+
+- My blog, github, twitter
+
+
+---
+
+## Background
+
+.pull-left[
+- Universidade Federal dos Vales do Jequitinhonha e Mucuri
+    
+    - BSc in Agronomy 
+    
+    - MSc in Crop Science (Weed Science)
+
+- University of Nebraska-Lincoln
+
+    - PhD in Weed Science
+    
+- University of Wisconsin-Madison
+
+    - Post-doc/Research Associate
+    
+- Western Sao Paulo University
+
+    - Assistant Professor
+    
+]
+    
+.pull-right[
+<div id="htmlwidget-de9c27c70999dd7ebd3c" style="width:100%;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-de9c27c70999dd7ebd3c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri World Imagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["OSM","Esri World Imagery"],"SESYNC",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"setView":[[0,-70],3,[]]},"evals":[],"jsHooks":[]}</script>
+]
+
+???
+
+- Use the map to describe my background
+
+---
+
+# Leisure time
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="images/run.png" width="310px"/&gt;
+&lt;/center&gt;
+&lt;br&gt;
+**Also:** Biking, reading, arts etc
+]
+
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/climb.png" width="410px"/&gt;
+&lt;/center&gt;
+]
+
+???
+
+- I would like to add some of my personal activities. 
+
+- When I have free time, I like running, climbing and hiking mountains
+
+- As well as reading, biking, arts, museum etc
+
+---
+
+class: inverse middle center
+
+# Research experiences
+
+
+
+---
+
+## Crop-weed interactions
+
+#### Master's research 
+.pull-left[
+
+
+
+&lt;img src="images/master.png" width="290px"/&gt;
+
+]
+
+.pull-right[
+
+&lt;img src="images/curves.png" width="400px"/&gt;
+]
+
+.footnote[[Oliveira et al (2018)](https://doi.org/10.1111/wre.12317)]
+
+???
+
+- I would like to start from my master's research. I worked with crop weed competition. 
+
+- I brought here the highlight of my thesis, a paper published at the prestigious Weed Research journal
+
+- This is a recipe paper, whereas I show how to perform a crop weed competition in additive design.
+
+- There are R codes. Everyone is able to run and learn
+
+---
+
+## Weed evolution
+
+#### PhD dissertation
+
+&gt; Evolution of HPPD-inhibitor herbicide resistance in a waterhemp (*Amatanthus tuberculatus* var. *rudis*) population from Nebraska
+.pull-left[
+![](images/max2.JPG)
+]
+
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/wath.png" width="250px"/&gt;
+&lt;/center&gt;
+.footnote[HPPD, 4-Hydroxyphenylpyruvate dioxygenase‑inhibitor]
+]
+
+???
+
+- I joined the U of Nebraska in 2014. 
+
+- I was funded by Capes Foundation from Brazil to get a PhD in Nebraska
+
+- I worked with waterhemp, one of the most troublesome weed in the US
+
+---
+
+## Weed evolution
+
+#### The dioecious *Amaranthus* species
+
+
+.pull-left[
+- A plant is either **F**emale or **M**ale
+
+- Rapidly evolves resistance to herbicides
+
+- Two of the most troublesome weed species in the US
+
+- Waterhemp -&gt; US Midwest
+
+- Palmer amaranth (*Amaranthus palmeri*) -&gt; US South
+]
+
+
+.pull-right[
+.pull-left[
+&lt;img src="images/palmer.png" width="280px"/&gt;
+]
+.pull-right[
+&lt;img src="images/wath.png" width="250px"/&gt;
+]
+]
+
+???
+
+- I would like to give a background about the pigweed species
+
+- Palmer amaranth is on the left and waterhemp in on the right
+
+- The are dioecious (a plant is either female or male)
+
+- Describe the locations 
+
+---
+
+## Concerns: HPPD-resistance in *Amaranthus* species
+
+- HPPD-resistance (R) in waterhemp and Palmer amaranth biotypes in corn fields across the US Midwest
+
+- Grower reported failure to control waterhemp in Nebraska (Platte Country, 2011)
+
+- **Resistance:** Target site resistance (TSR) or Non-target site resistance (NTSR)
+
+- Gene flow amongst *Amaranthus* species
+
+
+.pull-left[
+&lt;img src="images/platte.png" width="550px"/&gt;
+]
+
+.pull-right[
+&lt;img src="images/watb.png" width="350px"/&gt;
+]
+
+???
+
+- Talk a bit about the HPPD inhibitors, the bleaching symptoms
+
+- Tell the story about resistance in Nebraska
+
+
+---
+
+## Weed evolution
+
+#### Confirmation
+
+- Field and greenhouse studies to confirm herbicide (HPPD) weed resistance
+
+.pull-left[
+&lt;img src="images/waterhemp.jpeg" width="400px"/&gt;
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/dose.png" width="280px"/&gt;
+&lt;/center&gt;
+]
+
+
+.footnote[[Oliveira et al (2017)](https://doi.org/10.1017/wet.2016.4)]
+
+
+???
+
+- My first project was to confirm HPPD-R using greenhouse and field bioassays
+
+- We confirm that the population is R to mesotrione, tembotrione, and topromezone (HPPD herbicides)
+
+---
+## Weed evolution
+
+#### What is the mechanism of HPPD-resistance?
+
+&lt;center&gt;
+&lt;img src="images/resisd.png" width="800px"/&gt;
+&lt;/center&gt;
+
+???
+
+- We had a second question: what is the mechanisms of R in that waterhemp population?
+
+- TSR is well known: a point mutation, gene amplification etc
+
+- NTSR is not well understood: multiple enzymes, metabolic resistance
+
+---
+
+
+## Weed evolution
+
+#### Investigations on the mechanism of resistance
+
+.pull-left[
+&lt;img src="images/tembo.png" width="600px"/&gt;
+
+PBO, piperonyl butoxide
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/hplc.png" width="350px"/&gt;
+&lt;img src="images/pmsci.png" width="350px"/&gt;
+&lt;/center&gt;
+]
+
+.footnote[[Oliveira et al (2018)](https://doi.org/10.1002/ps.4697)]
+
+???
+
+- Describe the study
+
+- Talk about the Cytochrome p450 family
+
+- Striking results
+
+---
+
+
+## Weed evolution
+
+#### Plant genetic - Inheritance studies 
+
+- Crossing Resistant with Susceptible accessions
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="images/cross.png" width="440px"/&gt;
+&lt;/center&gt;
+]
+
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/frontiers.png" width="400px"/&gt;
+&lt;/center&gt;
+]
+
+.footnote[[Oliveira et al (2018)](https://doi.org/10.3389/fpls.2018.00060)]
+
+???
+
+- This was a genetic study
+
+- We investigated the inheritance pattern of R in this waterhemp population
+
+- How many genes are involved?
+
+- Results show nuclear inheritance, incomplete dominance and multiple genes playing a role in the resistance
+
+
+
+
+---
+
+## Weed evolution
+
+#### Segregation
+
+&lt;center&gt;
+&lt;img src="images/tablein.png" width="730px"/&gt;
+&lt;/center&gt;
+
+???
+
+- Describe the table
+
+---
+
+background-image: url(images/geneflow.png)
+background-position: right
+background-size: contain
+
+
+## Weed evolution
+
+
+#### Pollen-mediated gene flow
+
+- Herbicide resistance transfer between pigweed species
+
+&lt;img src="images/plantj.png" width="500px"/&gt;
+
+- Collaboration between University of Nebraska-Lincoln and Colorado &lt;br&gt;State University
+
+.footnote[[Oliveira et al (2018)]( https://doi.org/10.1111/tpj.14089)]
+
+???
+
+- Show excitement
+
+- Describe the figure first
+
+- We have a hypotheses if these two population could outcross exchange R traits
+
+- We used HPPD-R as a marker
+
+---
+
+## Weed evolution
+
+#### Internal transcribed spacer of the ribosomal coding region
+
+&lt;center&gt;
+&lt;img src="images/tspacer.png" width="900px"/&gt;
+&lt;/center&gt;
+
+.pull-left[
+- Double mutation distinct Palmer amaranth from 8 *Amaranthus* species
+
+- KASP assays
+
+- **HEX** and **FAM** fluorescent channels
+]
+
+.pull-left[
+
+&lt;center&gt;
+&lt;img src="images/thermoc.png" width="300px"/&gt;
+&lt;/center&gt;
+]
+
+
+???
+
+- KASP, Kompetitive Alleles Specific Polliformism
+
+- We developed a KASP assay to detect Palmer and waterhemp hybrids
+
+- See the double SNP in the ITS of the Ribosomal coding region
+
+---
+
+## Interspecific hybridization
+
+
+
+HPPD-**R** waterhemp &amp;#x2192; HPPD-**S** Palmer amaranth
+
+
+&lt;center&gt;
+&lt;img src="images/kmeans.png" width="700px"/&gt;
+&lt;/center&gt;
+
+???
+
+- These were the results
+
+- We used K-neighboring means with the HEX and FAM channels
+
+
+---
+
+## Integrated Weed Management
+
+#### University of Nebraska-Lincoln
+
+.pull-left[
+- Chemical weed management
+&lt;center&gt;
+&lt;img src="images/field.jpg" width="850px"/&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+- Non-chemical weed management
+&lt;center&gt;
+&lt;img src="images/flame.jpeg" width="450px"/&gt;
+&lt;/center&gt;
+]
+
+???
+
+- Describe the other work in Nebraska
+
+- Talk about the IWM projects
+
+- Interns, awards, meetings WSSA/NCWSS
+
+---
+
+## Integrated Weed Management
+
+#### University of Nebraska-Lincoln
+
+- Critical time for weed removal
+
+
+.pull-left[
+&lt;img src="images/weed_removal.png" alt="Cover crop image UW-Madison"&gt;
+]
+
+.pull-right[
+&lt;img src="images/ctwr.png" width="400px"/&gt;
+]
+
+???
+
+- Describe this project: multiple sites and years across Nebraska
+
+- Combinations of tactics to manage weeds
+
+---
+
+## University of Wisconsin-Madison
+
+.pull-left[
+- Experienced and helped with the established of a new *Research* and *Extension* program
+
+- Herbicide evaluation
+
+- Support Research and Extension staff
+
+- Seven graduate students/visiting students
+
+- NCWSS and WSSA's meetings/student weed contests
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/teambg.png" width="600px"/&gt;
+&lt;/center&gt;
+
+]
+
+???
+
+- Describe my moving to WI
+
+- Tell that it was a novel program
+
+- We had to hire studens and staff
+
+
+---
+background-image: url(images/smoke.jpeg)
+background-position: right
+background-size: contain
+
+
+## Integrated Weed Management
+
+#### Novel herbicide resistance traits
+
+- Dicamba and 2,4-D resistant crops
+
+- Drift evaluation
+
+- Support EPA's decisions
+
+
+
+.footnote[Source: [Soltani et al. (2020)](https://doi.org/10.1017/wet.2020.17) and [Werle et al. (2021)](https://doi.org/10.1017/wet.2021.62)]
+
+???
+
+- Describe the projects
+
+- Tell about the project together with U of Gelph
+
+---
+
+## Integrated Weed Management
+
+#### Cover Crops
+
+.pull-left[
+- Adapted cover crop species in Wisconsin
+
+- Termination timing and methods
+
+- Impact of residual herbicides on cover crop species and vice versa
+
+- Survey of cover crop adoption and management
+
+]
+
+
+.pull-right[
+&lt;img src="images/cover_crop.jpg" alt="Cover crop image UW-Madison"&gt;
+]
+
+
+.footnote[Image: Rodrigo Werle]
+
+???
+
+- Tell the importance of cover crops for IWM
+
+- We had a MSc student working in this project
+
+---
+
+## Integrated Weed Management
+
+#### Row-width manipulation
+
+.pull-left[
+&lt;img src="images/nik_01.png" alt="Cover crop image UW-Madison"&gt;
+]
+
+.pull-right[
+&lt;img src="images/nik_02.png" alt="Cover crop image UW-Madison"&gt;
+]
+
+.footnote[Image: Nikola Arsenijevic / UW-Madison]
+
+???
+
+- Tell the importance of row width for IWM
+
+- We had a MSc student working in this project
+
+---
+
+## Application technology
+
+#### Drift mitigation
+
+&lt;center&gt;
+&lt;img src="images/hooded_sprayer.jpeg" alt="Hooded sprayer" width="600px"/&gt;
+&lt;/center&gt;
+
+
+.footnote[Image: Rodrigo Werle]
+
+---
+background-image: url(images/max3.jpeg)
+background-position: right
+background-size: contain
+
+
+## Weed ecology
+
+#### Palmer adaptation to the north central US
+
+  - Arlington, WI
+    
+  - Clay Center, NE
+    
+  - Grant, NE
+    
+  - Lincoln, NE
+    
+  - Macomb, IL
+
+.footnote[Image: Victor Ribeiro]
+
+???
+
+- Describe the study
+
+---
+
+## Weed ecology
+
+#### Weed emergence
+
+.pull-left[
+- Understand weed emergence to implement best management practices
+
+  - Giant ragweed emergence in Wisconsin (Striegel et al 2021)
+  
+  - Horseweed emergence in Nebraska
+]
+
+.pull-right[
+
+&lt;img src="images/germination.png" alt="Giant ragweed germination" width="500px"/&gt;
+]
+
+
+???
+
+- Understanding weed biology is important for minimizing weed impact to agroecosystem
+
+---
+
+background-image: url(images/max.jpeg)
+background-position: right
+background-size: contain 
+
+## University of Wisconsin-Madison
+
+&lt;img src="images/field_day.png" width="730px"/&gt;
+
+???
+
+- Field days and talks across Wisconsin
+
+---
+
+
+## University of Wisconsin-Madison
+
+&lt;center&gt;
+&lt;img src="images/teamph.jpeg" width="800px"/&gt;
+&lt;/center&gt;
+
+???
+
+- This was the Wisconsin Weeds Team in 2019
+
+- Prior to the pandemic
+
+---
+
+## Western Sao Paulo University
+
+.pull-left[
+- Teaching
+  - Integrated Weed Management
+  - Wheat
+  - Programming in R
+
+- Graduate and undergraduate students
+
+- Integrated Weed Management in cotton
+
+  - Pre-emergence herbicides
+  - Critical time for weed control
+  
+- Integrated Weed Management survey in Western Sao Paulo
+]
+
+
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/cotton_ex.jpeg" alt="" width="600px"/&gt;
+&lt;/center&gt;
+]
+
+???
+
+- My first year in Brazil I have the chance to work in a University....
+
+---
+background-image: url(https://source.unsplash.com/1LLh8k2_YFk)
+background-position: right
+background-size: contain
+
+## Data science
+
+- **Languages**: [&lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.r-project.org/),
+[&lt;span class="latex"&gt;L&lt;sup&gt;a&lt;/sup&gt;T&lt;sub&gt;e&lt;/sub&gt;X&lt;/span&gt;](https://www.latex-project.org/), [&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.w3.org/Style/CSS/Overview.en.html), [&lt;svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.w3schools.com/html/html_intro.asp), [&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.markdownguide.org/)
+
+- GitHub &lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+- R tidyverse [instructor](https://education.rstudio.com/trainers/people/oliveira+maxwel/)
+
+- Data [visualization](https://github.com/maxwelco/Tidy-Tuesday) 📊
+
+- Statistical modeling 📈
+
+- Blog - [maxweeds](https://maxweeds.rbind.io/) and [Open Weed Science](https://www.openweedsci.org/)
+
+- Manuscripts 📜
+
+- Shiny [app](https://maxwelco1.shinyapps.io/fundamax/)
+
+.footnote[Image: Markus Spiske/Unsplash]
+
+
+
+---
+
+class: inverse middle center
+
+# Oliveira's lab at
+
+
+
+&lt;center&gt;
+&lt;img src="images/csu_logo.png" alt="Colorado State University Logo Png Transparent@nicepng.com" width="600px"/&gt;
+&lt;/center&gt;
+
+
+
+---
+
+## Canada
+
+.pull-left[
+- 7% of Canada’s land area is suitable for farming
+
+- Variety of crops
+
+- Average Canadian farm is about 800 acres
+
+
+&lt;br&gt;
+&lt;img src="https://image.winudf.com/v2/image1/bmV0LmFoYXJtLmNhbmFkYV9zY3JlZW5fM18xNTY3MDE2MTUxXzAzMQ/screen-3.jpg?fakeurl=1&amp;type=.jpg" alt="" width="500px"/&gt;
+
+]
+
+.pull-right[
+- Between 2015 and 2019, the number of organic farms increased by 48% in Canada
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Transparenteconomycanada.png/260px-Transparenteconomycanada.png" alt="" width="300px"/&gt;
+&lt;/center&gt;
+]
+
+???
+
+- Wheat, canola, barley, corn and soybeans
+
+---
+
+## Quebec
+
+.pull-left[
+
+&lt;center&gt;
+&lt;img src="images/quebec_1.png" alt="" width="400px"/&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+
+- Quebec leads the organic sector in Canada
+    - 9% of Quebec farms certified organic
+    - Many more currently transitioning to organics
+
+- Minister of Agriculture (MAPAQ) plans to double the number of organic farms by 2025
+
+]
+
+---
+
+
+## Weed evolution in Canada
+
+&lt;center&gt;
+&lt;img src="images/canada_r.png" alt="" width="1000px"/&gt;
+&lt;/center&gt;
+
+
+???
+- birdsrape mustard (*Brassica rapa*)
+
+- common lambsquarters (*Chenopodium album*)
+
+- common ragweed (*Ambrosia artemisiifolia*)
+]
+
+.pull-right[
+- Powell amaranth (*Amaranthus powellii*)
+
+- redroot pigweed (*Amaranthus retroflexus*)
+
+- wild oat (*Avena fatua*)
+
+- There are 17 cases of resistance
+
+
+---
+
+## Integrated Weed Management
+
+.pull-left[
+- **Integrated weed management** is no longer a nice idea
+
+- **Integrated weed management** is "the solution"
+&lt;center&gt;
+&lt;img src="images/iwm.png" width="350px"/&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+- Weed management: **heavily** based on herbicides
+
+
+&lt;center&gt;
+&lt;img src="https://cropwatch.unl.edu/styles/hero/public/images/hero/2017/Palmer-amaranth-glyphosate-resistant-female.jpg?itok=inIDj89x" width="500px"/&gt;
+&lt;/center&gt;
+.footnote[Image: UNL]
+]
+
+---
+
+## My research program at Colorado State University (Short-term)
+
+#### Better understand herbicide resistance/most common/troublesome species in Quebec
+
+.pull-left[
+&gt; **RQ** - What is the current resistance scenario in Quebec?
+  
+- **Approach** - Surveys, monitoring, quick diagnoses
+]
+
+.pull-right[
+&gt; **RQ** - What are the resistance drivers/mechanisms?
+- **Approach** - Investigate known and unravel new resistance mechanisms 
+]
+
+--
+
+#### Understanding weed biology to improve weed management
+
+.pull-left[
+&gt; **RQ** - How do weed populations shift in response to weed management practices?
+  
+- **Approach** - Measure biological variables as influenced by management practices
+]
+
+.pull-right[
+&gt; **RQ** - Can we use effective non-chemical and site-specific weed management?
+- **Approach** - Investigate non-chemical and site-specific tactics that minimize weed impact to cropping systems
+]
+
+---
+
+## My research program at Colorado State University (Long-term)
+
+#### Adopting epidemiological approach to understand weed population dynamics
+
+.pull-left[
+&gt; **RQ** - What are the main factors that make weeds endemic?
+  
+- **Approach** - Genomics, agronomic, and environmental metadata; data science, statistics etc
+]
+
+.pull-right[
+&gt; **RQ** - What is the best integrated weed management strategies for Quebec ?
+- **Approach** - Collect data and validate in the field weed management strategies that minimize weed impact to cropping systems
+]
+
+--
+
+.pull-left[
+&gt; **RQ** - Do changes in precipitation, temperature and CO&lt;sub&gt;2&lt;/sub&gt; reduce weed control?
+  
+- **Approach** - Measured plant development and herbicide degradation under stress condition etc
+]
+
+.pull-right[
+&gt; **RQ** - Do changes in precipitation, temperature and CO&lt;sub&gt;2&lt;/sub&gt; increase weed invasiveness?
+- **Approach** - Plant adaptation, measure ecological and biological weed traits; Palmer amaranth migration to Canada
+]
+
+---
+
+## My research program at Colorado State University
+
+#### Smart Weed Management
+
+.pull-left[
+- Coordinated and Sustained Interdisciplinary Research
+
+- Fundamental and applied research
+
+- Network of experiments across Quebec / Canada / North America
+
+- Participatory research to guide priorities
+
+- Build capacity and sustainable research programs
+
+- Economic and social science research
+
+- Understand human behavior and the drivers of decisions
+
+- Education and outreach
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="https://www.mcgill.ca/macdonaldfarm/files/macdonaldfarm/farm_aerial_2018.jpg" alt="" width="600px"/&gt;
+&lt;/center&gt;
+]
+
+
+---
+
+## Team work
+
+.pull-left[
+- Research technologists
+
+- Undergraduate students
+
+- Graduate students
+
+- Postdoctoral research associates
+
+- Visiting scientists
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="images/mcgill_ag.jpeg" alt="" width="200px"/&gt;
+&lt;/center&gt;
+
+]
+
+???
+
+- Faculty of Agricultural and Environmental Sciences
+
+- Department of Plant Sciences
+
+
+---
+
+## Collaborations
+
+.pull-left[
+- Faculty
+
+- Staff 
+
+- Students
+
+- Public
+]
+
+.pull-right[
+&lt;center&gt;
+&lt;img src="https://peiret.github.io/images/mcgill-logo.png" alt="" width="600px"/&gt;
+&lt;/center&gt;
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="images/mcgill_ag.jpeg" alt="" width="100px"/&gt;
+&lt;/center&gt;
+
+]
+
+
+---
+
+## Collaborations
+
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/fr/thumb/b/bf/Universit%C3%A9_Laval_logo_et_texte.svg/640px-Universit%C3%A9_Laval_logo_et_texte.svg.png" alt="Université Laval logo" width="200px"/&gt;
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/University_of_Nebraska%E2%80%93Lincoln_logo.svg/466px-University_of_Nebraska%E2%80%93Lincoln_logo.svg.png" alt="Université Laval logo" width="200px"/&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="https://1000logos.net/wp-content/uploads/2020/11/University-of-Wisconsin-logo.png" alt="UW-Madison" width="200px"/&gt;
+
+&lt;img src="https://gradeup.com.br/wp-content/uploads/2015/09/csu-logo.png" alt="" width="200px"/&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="http://equity.psu.edu/communications-marketing/assets/PSHORRGB2C.png/image_preview" alt="" width="200px"/&gt;
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/University_of_Guelph_logo.svg/1000px-University_of_Guelph_logo.svg.png" alt="U of Guelph logo" width="200px"/&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="https://ddfoqzqsu0zvp.cloudfront.net/media/documents/logo_horizonal_green.png" alt="" width="200px"/&gt;
+
+&lt;img src="https://www.nicepng.com/png/full/145-1457858_university-of-minnesota-university-of-minnesota-logo.png" alt="" width="200px"/&gt;
+
+&lt;/center&gt;
+]
+
+
+
+.pull-right[
+&lt;center&gt;
+
+&lt;img src="https://www.abilities.ca/wp-content/uploads/2019/07/Agriculture-and-Agri-Food-Canada-1.png" alt="Agri-food Canada logo" width="200px"/&gt;
+
+
+&lt;img src="https://leconsortium.coop/wp-content/uploads/2020/03/CEROM.jpg" alt="" width="200px"/&gt;
+&lt;br&gt;
+&lt;img src="https://assets.grenier.qc.ca/uploads/images/logo-103461.png" alt="" width="200px"/&gt;
+
+&lt;/center&gt;
+]
+
+
+???
+
+- Caroline Halde, U Laval
+
+- Todd Gaines and Frank Dayan, CSU
+
+- Caio Brunharo, PSU
+
+- Peter Sikkema in Guelph
+
+- Eric Patterson, MSU
+
+- Many other in Europe, Brazil, Australia, USA, Canada
+
+---
+
+## Funding / Collaborations
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Natural_Sciences_and_Engineering_Research_Council_Logo.svg/450px-Natural_Sciences_and_Engineering_Research_Council_Logo.svg.png" alt="" width="200px"/&gt;
+&lt;/center&gt;
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="images/organic.png" alt="" width="200px"/&gt;
+&lt;/center&gt;
+
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="https://www.upa.qc.ca/wp-content/uploads/2016/05/upa_logocouleur.png" alt="" width="200px"/&gt;
+&lt;/center&gt;
+]
+
+
+
+.pull-right[
+
+&lt;center&gt;
+&lt;img src="https://frq.gouv.qc.ca/app/uploads/2021/05/logo-frq-couleur-2.jpg" alt="" width="200px"/&gt;
+&lt;/center&gt;
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="images/qfa.jpeg" alt="" width="200px"/&gt;
+&lt;/center&gt;
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src="images/industry.png" width="400px"/&gt;
+&lt;/center&gt;
+]
+
+
+
+
+
+
+---
+
+## Publications
+
+&lt;center&gt;
+&lt;img src="images/weed_technology.jpg" width="250px"/&gt;
+
+&lt;img src="images/wres.png" width="250px"/&gt;
+
+&lt;img src="images/science.jpeg" width="250px"/&gt;
+
+&lt;img src="https://cdnsciencepub.com/na101/home/literatum/publisher/nrc/journals/content/cjps/2021/cjps.2021.10105/cjps.2021.10105/20211008-01/cjps.2021.10105.cover.jpg" width="250px"/&gt;
+&lt;/center&gt;
+
+---
+
+name: goodbye
+class: right, middle, blue
+
+
+&lt;img style="border-radius: 50%;" src="images/foto.jpg" width="150px"/&gt;
+
+# Thank you!
+
+#### You can find me at...
+
+[&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @maxwelco](https://github.com/maxwelco)  
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; @maxwelco](https://twitter.com/maxwelco)  
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; maxweeds.rbind.io](https://maxweeds.rbind.io)  
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;style:solid;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"&gt;&lt;/path&gt;&lt;/svg&gt; maxwelco@gmail.com](mailto:maxwelco@gmail.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
