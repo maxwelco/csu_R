@@ -730,7 +730,7 @@ background-size: contain
 #### Drift mitigation
 
 
-<img src="images/hood_paper.png" width="400px"/>
+<img src="images/hood_paper.png" width="500px"/>
 
 
 
@@ -750,7 +750,8 @@ background-size: contain
 
 
 .pull-right[
-<img src="images/max3.jpeg" width="500px"/>
+
+<img src="images/max3.jpeg" width="340px"/>
 ]
 
 
@@ -776,7 +777,7 @@ background-size: contain
 
 .pull-right[
 
-<img src="images/germination.png" alt="Giant ragweed germination" width="500px"/>
+<img src="images/germination.png" alt="Giant ragweed germination" width="560px"/>
 ]
 
 
@@ -804,8 +805,10 @@ background-size: contain
 ## University of Wisconsin-Madison
 
 <center>
-<img src="images/teamph.jpeg" width="800px"/>
+<img src="images/teamph.jpeg" width="900px"/>
 </center>
+
+.footnote[Image: August 2019]
 
 ???
 
@@ -837,13 +840,30 @@ background-size: contain
 
 .pull-right[
 <center>
-<img src="images/cotton_ex.jpeg" alt="" width="600px"/>
+<img src="images/cotton_ex.jpeg" alt="" width="650px"/>
 </center>
 ]
 
 ???
 
 - My first year in Brazil I have the chance to work in a University....
+
+---
+
+## Industry
+
+- Application technology specialist
+
+- Technical support 
+
+- Research and develpment
+
+- Training
+
+<center>
+<img src="https://www.teejet.com/CMSImages/TEEJET_PT/main-page-images/main_teejet_tips-panel-sprays.jpg" alt="" width="850px"/>
+</center>
+
 
 ---
 background-image: url(https://source.unsplash.com/1LLh8k2_YFk)
