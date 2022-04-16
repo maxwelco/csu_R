@@ -99,10 +99,15 @@ background-size: contain
 
 
 - About me
-
+  - Background experiences
+  
+<br>
 - Research experiences
-
+  - Basic and applied research
+  
+<br>
 - Oliveira's lab at Colorado State University
+  - Proposed short and long term projects
 
 
 
@@ -224,7 +229,7 @@ class: inverse middle center
 
 
 
-<img src="images/master.png" width="290px"/>
+<img src="images/master.png" width="300px"/>
 
 ]
 
@@ -386,7 +391,6 @@ class: inverse middle center
 
 ---
 
-
 ## Weed evolution
 
 #### Investigations on the mechanism of resistance
@@ -533,13 +537,11 @@ background-size: contain
 
 ## Interspecific hybridization
 
-
-
 HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 
 
 <center>
-<img src="images/kmeans.png" width="700px"/>
+<img src="images/kmeans.png" width="800px"/>
 </center>
 
 ???
@@ -614,6 +616,11 @@ HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 - Seven graduate students/visiting students
 
 - NCWSS and WSSA's meetings/student weed contests
+
+- Row crops
+  - Corn
+  - Soybean
+  - Industrial Hemp
 ]
 
 .pull-right[
@@ -621,6 +628,7 @@ HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 <img src="images/teambg.png" width="600px"/>
 </center>
 
+.footnote[Image: April 2018]
 ]
 
 ???
@@ -645,6 +653,8 @@ background-size: contain
 - Dicamba and 2,4-D resistant crops
 
 - Drift evaluation
+
+- Large scale studies (> 5 acres)
 
 - Support EPA's decisions
 
