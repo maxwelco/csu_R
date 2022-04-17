@@ -89,11 +89,9 @@ xaringanExtra::use_broadcast() # use P
 
 
 
-
 background-image: url(https://source.unsplash.com/ZYmk2tZ1fck)
 background-position: right
 background-size: contain
-
 
 ## Agenda
 
@@ -594,11 +592,15 @@ HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 
 
 .pull-left[
+<center>
 <img src="images/weed_removal.png" alt="Cover crop image UW-Madison">
+</center>
 ]
 
 .pull-right[
+<center>
 <img src="images/ctwr.png" width="400px"/>
+</center>
 ]
 
 ???
@@ -637,7 +639,6 @@ HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 
 - Funding
   - Commodity boards
-  - North Central Research
   - Industry
 ]
 
@@ -754,14 +755,18 @@ background-size: contain
 #### Palmer adaptation to the north central US
 
 .pull-left[
+<br><br>
+<center>
 <img src="images/pfemale.png" width="800px"/>
+</center>
 ]
 
 
 
 .pull-right[
-
+<center>
 <img src="images/max3.jpeg" width="340px"/>
+</center>
 ]
 
 
@@ -1014,7 +1019,7 @@ class: inverse middle center
 --
 
 
-#### Understanding weed biology to improve weed management
+#### Integrating weed biology and digital agriculture to improve weed management
 
 .pull-left[
 > **RQ** - How do weed populations shift in response to weed management practices?
@@ -1095,6 +1100,8 @@ class: inverse middle center
 ## Team work
 
 .pull-left[
+- Faculty 
+
 - Research technologists
 
 - Undergraduate students
@@ -1144,18 +1151,11 @@ class: inverse middle center
 
 .pull-right[
 <center>
-
-<img src="images/col_hemp.jpeg" alt="Agri-food Canada logo" width="200px"/>
-
-<img src="http://cosorghum.com/images/cologo.png" alt="Agri-food Canada logo" width="200px"/>
-
-<img src="images/col_corn.jpg" alt="" width="300px"/>
+<img src="https://newsroom.unl.edu/announce/files/file80424.jpg" alt="" width="200px"/>
+</center>
 <br>
-<img src="images/col_wheat.jpeg" alt="" width="200px"/>
-
-<img src="https://coloradodrybeans.org/wp-content/uploads/2021/12/Colorado-Bean-logo-full-color-e1640919805335-2048x1203.png" alt="" width="300px"/>
-
-
+<center>
+<img src="https://sites.utexas.edu/hcrl/files/2016/08/Screen-Shot-2016-08-22-at-11.38.09-AM.png" alt="" width="400px"/>
 </center>
 ]
 
@@ -1168,22 +1168,36 @@ class: inverse middle center
 
 .pull-left[
 <center>
-<img src="https://newsroom.unl.edu/announce/files/file80424.jpg" alt="" width="200px"/>
-</center>
-<br>
-<center>
-<img src="https://sites.utexas.edu/hcrl/files/2016/08/Screen-Shot-2016-08-22-at-11.38.09-AM.png" alt="" width="400px"/>
+<img src="images/col_hemp.jpeg" alt="" width="200px"/>
+
+<img src="http://cosorghum.com/images/cologo.png" alt="" width="180px"/>
+
+<br><br>
+<img src="images/col_wheat.jpeg" alt="" width="200px"/>
+
+<img src="https://www.coaxiumwps.com/wp-content/uploads/CoAX-logo-clr-whiteglow-2019.png" alt="" width="200px"/>
 </center>
 ]
+
 
 
 
 .pull-right[
 
 <center>
+<img src="images/col_corn.jpg" alt="" width="300px"/>
+<img src="https://coloradodrybeans.org/wp-content/uploads/2021/12/Colorado-Bean-logo-full-color-e1640919805335-2048x1203.png" alt="" width="190px"/>
+
+</center>
+<br>
+<center>
 <img src="images/industry.png" width="400px"/>
 </center>
-<br><br>
+<center>
+<img src="https://exchange4media.gumlet.io/news-photo/97259-UPLmain.jpg?format=webp&w=750&dpr=2.0" width="150px"/>
+</center>
+
+<br>
 <center>
 <img src="https://ag.colorado.gov/sites/ag/files/ag.PNG" alt="" width="400px"/>
 </center>
