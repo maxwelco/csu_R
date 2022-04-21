@@ -148,23 +148,19 @@ class: middle, center
 
 .pull-left[
 - Universidade Federal dos Vales do Jequitinhonha e Mucuri
-    
-    - BSc in Agronomy 
-    
-    - MSc in Crop Science (Weed Science)
+    - BSc in Agronomy / MSc in Crop Science (Weed Science)
 
 - University of Nebraska-Lincoln
-
     - PhD in Weed Science
     
 - University of Wisconsin-Madison
-
     - Post-doc/Research Associate
     
 - Western Sao Paulo University
-
     - Assistant Professor
     
+- TeeJet Technologies
+    - Application Technology specialist
 ]
     
 .pull-right[
@@ -652,34 +648,7 @@ HPPD-**R** waterhemp &#x2192; HPPD-**S** Palmer amaranth
 
 
 ---
-background-image: url(images/smoke.jpeg)
-background-position: right
-background-size: contain
 
-
-## Integrated Weed Management
-
-#### Novel herbicide resistance traits
-
-- Dicamba and 2,4-D resistant crops
-
-- Drift evaluation
-
-- Large scale studies (> 5 acres)
-
-- Support EPA's decisions
-
-
-
-.footnote[Source: [Soltani et al. (2020)](https://doi.org/10.1017/wet.2020.17) and [Werle et al. (2021)](https://doi.org/10.1017/wet.2021.62)]
-
-???
-
-- Describe the projects
-
-- Tell about the project together with U of Gelph
-
----
 
 ## Integrated Weed Management
 
@@ -731,6 +700,36 @@ background-size: contain
 - Tell the importance of row width for IWM
 
 - We had a MSc student working in this project
+
+---
+background-image: url(images/smoke.jpeg)
+background-position: right
+background-size: contain
+
+
+## Integrated Weed Management
+
+#### Novel herbicide resistance traits
+
+- Dicamba and 2,4-D resistant crops
+
+- Drift evaluation
+
+- Large scale studies (> 5 acres)
+
+- Support EPA's decisions
+
+
+
+.footnote[Source: [Soltani et al. (2020)](https://doi.org/10.1017/wet.2020.17) and [Werle et al. (2021)](https://doi.org/10.1017/wet.2021.62)]
+
+???
+
+- Describe the projects
+
+- Tell about the project together with U of Gelph
+
+
 
 ---
 background-image: url(images/pms.png)
@@ -898,7 +897,9 @@ background-size: contain
 
 - Statistical modeling 📈
 
-- Blog - [maxweeds](https://maxweeds.rbind.io/) and [Open Weed Science](https://www.openweedsci.org/)
+- Machine learning
+
+- Blog - [maxweeds](https://maxweeds.rbind.io/) and [Open Weed Science](https://www.openweedsci.netlify.app/)
 
 - Manuscripts 📜
 
@@ -914,18 +915,94 @@ class: inverse middle center
 
 # Oliveira's lab at
 
-
-
 <center>
 <img src="images/csu_logo.png" alt="Colorado State University Logo Png Transparent@nicepng.com" width="800px"/>
 </center>
 
 
+---
+
+## Weed Lab at Colorado State University
+
+.pull-left[
+
+#### Cross-disciplinary program
+
+- Weed genomics / molecular genetics
+
+- Biochemistry / Physiology
+
+- **Weed Ecology / Modeling**
+
+- New position
+]
+
+.pull-right[
+<center>
+<img src="https://media.giphy.com/media/RIqh9nbpblgvWvd6ZK/giphy.gif" width="400px"/>
+</center>
+]
 
 ---
 
+## Colorado crops
 
-## Weed evolution 
+<center>
+<img src="images/colo_crops.png" width="690px"/>
+</center>
+
+.footnote[Source: USDA]
+
+
+---
+
+## Colorado weeds
+
+#### Troublesome grasses
+
+jointed goatgrass - feral rye - downy brome
+
+<center>
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/189178576/original.jpeg" width="360px"/>
+
+<img src="images/feral.png" width="400px"/>
+
+
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/188930376/original.jpeg" width="300px"/>
+</center>
+
+.footnote[Images: Inaturalist]
+
+---
+
+## Colorado weeds
+
+#### Troublesome broadleaves
+
+kochia - pigweed species
+
+.pull-left[
+<center>
+<img src="https://media.giphy.com/media/CJN2cdXD51Q2c/giphy.gif" width="450px"/>
+</center>
+]
+
+.pull-right[
+<center>
+<img src="https://csuvth.colostate.edu/poisonous_plants/images/web513-1.jpg" width="220px"/>
+</center>
+]
+
+
+
+.footnote[Images: giphy.com / CSU]
+
+
+
+
+---
+
+## Weed evolution in the US
 
 <center>
 <img src="images/usa_resistance.png" alt="" width="900px"/>
@@ -933,21 +1010,14 @@ class: inverse middle center
 
 
 ???
-- birdsrape mustard (*Brassica rapa*)
-
-- common lambsquarters (*Chenopodium album*)
-
-- common ragweed (*Ambrosia artemisiifolia*)
-]
-
-.pull-right[
-- Powell amaranth (*Amaranthus powellii*)
-
 - redroot pigweed (*Amaranthus retroflexus*)
 
-- wild oat (*Avena fatua*)
+- kochia (*Bassia scoparia*)
 
-- There are 17 cases of resistance
+- Avena fatua (**)
+
+- feral rye (*Secale cereale*)
+
 
 
 ---
@@ -972,30 +1042,6 @@ class: inverse middle center
 </center>
 .footnote[Image: UNL]
 ]
-
----
-
-## Weed Lab at Colorado State University
-
-.pull-left[
-
-#### Cross-disciplinary program
-
-- Weed genomics / molecular genetics
-
-- Biochemistry / Physiology
-
-- Weed Ecology / Modeling
-
-- ??
-]
-
-.pull-right[
-<center>
-<img src="https://media.giphy.com/media/RIqh9nbpblgvWvd6ZK/giphy.gif" width="400px"/>
-</center>
-]
-
 
 
 
@@ -1024,7 +1070,7 @@ class: inverse middle center
 .pull-left[
 > **RQ** - How do weed populations shift in response to weed management practices?
   
-- **Approach** - Measure biological variables as influenced by management practices
+- **Approach** - Measure ecological variables as influenced by management practices
 ]
 
 .pull-right[
@@ -1045,7 +1091,7 @@ class: inverse middle center
 ]
 
 .pull-right[
-> **RQ** - What is the best integrated weed management strategies for Colorado?
+> **RQ** - What are the best integrated weed management strategies for Colorado?
 - **Approach** - Use big data and validate in the field weed management strategies
 ]
 
@@ -1100,17 +1146,19 @@ class: inverse middle center
 ## Team work
 
 .pull-left[
+- Weed Lab
+
 - Faculty 
+
+- Visiting scientists
 
 - Research technologists
 
-- Undergraduate students
+- Postdoctoral research associates
 
 - Graduate students
 
-- Postdoctoral research associates
-
-- Visiting scientists
+- Undergraduate students
 ]
 
 .pull-right[
@@ -1125,7 +1173,7 @@ class: inverse middle center
 
 ---
 
-## Funding / Collaborations
+## Collaborations
 
 
 .pull-left[
@@ -1151,16 +1199,19 @@ class: inverse middle center
 
 .pull-right[
 <center>
-<img src="https://newsroom.unl.edu/announce/files/file80424.jpg" alt="" width="200px"/>
+<img src="https://www.montana.edu/assets/images/wq9qq/image3.jpg" alt="" width="200px"/>
+<img src="https://1000logos.net/wp-content/uploads/2017/07/Logo-University-of-Arizona-500x213.jpg" alt="" width="300px"/>
 </center>
-<br>
+
 <center>
-<img src="https://sites.utexas.edu/hcrl/files/2016/08/Screen-Shot-2016-08-22-at-11.38.09-AM.png" alt="" width="400px"/>
-</center>
+<img src="https://s.pngkit.com/png/small/234-2347980_new-mexico-state-university-logo.png
+" alt="" width="200px"/>
+<img src="https://www.blackstarfarms.com/wp-content/uploads/2018/01/usda.jpg" alt="" width="200px"/>
+<center>
+<center>
+<img src="https://temporalcerebral.com.br/wp-content/uploads/2017/05/redesign-oregon-state-university-novo-logotipo-3.png" alt="" width="300px"/>
+<center>
 ]
-
-
-
 
 ---
 
@@ -1168,14 +1219,19 @@ class: inverse middle center
 
 .pull-left[
 <center>
-<img src="images/col_hemp.jpeg" alt="" width="200px"/>
+<img src="images/col_wheat.jpeg" alt="" width="170px"/>
 
-<img src="http://cosorghum.com/images/cologo.png" alt="" width="180px"/>
+<img src="https://www.coaxiumwps.com/wp-content/uploads/CoAX-logo-clr-whiteglow-2019.png" alt="" width="150px"/>
 
-<br><br>
-<img src="images/col_wheat.jpeg" alt="" width="200px"/>
+<img src="images/col_hemp.jpeg" alt="" width="160px"/>
 
-<img src="https://www.coaxiumwps.com/wp-content/uploads/CoAX-logo-clr-whiteglow-2019.png" alt="" width="200px"/>
+<img src="images/sorgo.png" alt="" width="160px"/>
+
+</center>
+
+<center>
+<img src="https://newsroom.unl.edu/announce/files/file80424.jpg" alt="" width="150px"/>
+<img src="https://sites.utexas.edu/hcrl/files/2016/08/Screen-Shot-2016-08-22-at-11.38.09-AM.png" alt="" width="300px"/>
 </center>
 ]
 
@@ -1187,17 +1243,16 @@ class: inverse middle center
 <center>
 <img src="images/col_corn.jpg" alt="" width="300px"/>
 <img src="https://coloradodrybeans.org/wp-content/uploads/2021/12/Colorado-Bean-logo-full-color-e1640919805335-2048x1203.png" alt="" width="190px"/>
-
 </center>
-<br>
 <center>
 <img src="images/industry.png" width="400px"/>
 </center>
 <center>
 <img src="https://exchange4media.gumlet.io/news-photo/97259-UPLmain.jpg?format=webp&w=750&dpr=2.0" width="150px"/>
+<img src="https://media.glassdoor.com/sql/356526/albaugh-squarelogo-1524696935599.png" width="120px"/>
+<img src="https://globalexpo-net.com/wp-content/uploads/2021/10/ORG2918-American-Sugar-Beet-Association.jpg" alt="" width="150px"/>
 </center>
 
-<br>
 <center>
 <img src="https://ag.colorado.gov/sites/ag/files/ag.PNG" alt="" width="400px"/>
 </center>
