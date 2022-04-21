@@ -85,6 +85,7 @@ xaringanExtra::use_share_again()
 xaringanExtra::use_scribble() # use letter S
 xaringanExtra::use_fit_screen()
 xaringanExtra::use_broadcast() # use P
+xaringanExtra::use_panelset()
 ```
 
 
@@ -954,49 +955,50 @@ class: inverse middle center
 .footnote[Source: USDA]
 
 
+
 ---
 
 ## Colorado weeds
 
-#### Troublesome grasses
+#### Most troublesome weeds
 
-jointed goatgrass - feral rye - downy brome
-
+.panelset[
+.panel[.panel-name[jointed goatgrass]
 <center>
-<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/189178576/original.jpeg" width="360px"/>
-
-<img src="images/feral.png" width="400px"/>
-
-
-<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/188930376/original.jpeg" width="300px"/>
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/189178576/original.jpeg" width="500px"/>
 </center>
-
 .footnote[Images: Inaturalist]
-
----
-
-## Colorado weeds
-
-#### Troublesome broadleaves
-
-kochia - pigweed species
-
-.pull-left[
-<center>
-<img src="https://media.giphy.com/media/CJN2cdXD51Q2c/giphy.gif" width="450px"/>
-</center>
 ]
 
-.pull-right[
+.panel[.panel-name[feral rye]
+<center>
+<img src="images/feral.png" width="500px"/>
+</center>
+.footnote[Image: Inaturalist]
+]
+
+.panel[.panel-name[downy brome]
+<center>
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/188930376/original.jpeg" width="400px"/>
+</center>
+.footnote[Image: Inaturalist]
+]
+
+.panel[.panel-name[kochia]
+<center>
+<img src="https://media.giphy.com/media/CJN2cdXD51Q2c/giphy.gif" width="400px"/>
+</center>
+.footnote[Image: giphy.com]
+]
+
+.panel[.panel-name[Pigweeds]
 <center>
 <img src="https://csuvth.colostate.edu/poisonous_plants/images/web513-1.jpg" width="220px"/>
 </center>
+.footnote[Image: CSU]
 ]
 
-
-
-.footnote[Images: giphy.com / CSU]
-
+]
 
 
 
